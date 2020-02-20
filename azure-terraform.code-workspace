@@ -1,0 +1,20 @@
+{
+  "folders": [
+    {
+      "path": "cosmosdb"
+    },
+    {
+      "path": "linux-vm"
+    },
+    {
+      "path": "storage"
+    },
+    {
+      "path": "yeoman"
+    },
+    {
+      "path": "terratest"
+    }
+  ],
+  "settings": {}
+}
