@@ -1,3 +1,11 @@
+terraform {
+  required_version = ">= 0.12"
+}
+
+provider "azurerm" {
+  version = "1.44.0"
+}
+
 resource "azurerm_resource_group" "vote-resource-group" {
   name     = "vote-resource-group"
   location = "westus"
@@ -57,4 +65,8 @@ resource "azurerm_container_group" "test" {
 
 output "dns" {
   value = azurerm_container_group.test.fqdn
+}
+
+lifecycle {
+  create_before_destroy = true
 }
